@@ -63,9 +63,57 @@ Project Organization
 **Результат**
  - Автоматизация предобработки, обучения и инференса
 
+---
 
-**Второе задание**
 
-- 
--
-- 
+### Второе задание
+
+- Взять пайплайн с MLflow для дальнейшей работы с [Kedro](https://kedro.readthedocs.io/en/stable/)
+- Выбранный пайплайн сделать по правилам Kedro
+- Реализовать Data engineering pipeline
+- Реализовать Machine learning pipeline
+- Связать два pipeline и получить такой же скоринг 
+
+**Результат**
+- Kredo визуализирует pipeline
+- ML pipeline показывает такой же скоринг как базовый pipeline 
+
+
+---
+
+### Третье задание
+- Добавить в pipeline модели шаг,который будет работать с APIDataSet
+- Данный шаг должен брать данные с API и выдавать предикт
+- Все должно быть оформленно в FastAPI, выкидывать результат на localhost:port 
+
+---
+
+### Четвертое задание
+- Покрыть pipeline тестами используя python hyposises, pytest 
+- Покрытие должно быть не ниже 70% кода
+- Использовать GitHub Action для CI pipeline
+
+---
+
+### Пятое задание
+- Создать Dockerfile.
+- Используя dockerignore скопировать в image только нужный код(инференс + передача инфы)
+- Создать Docker image c моделью
+- Запустить Docker Container  на основе Docker image .
+Модель должна возвращать результат по API
+---
+
+#### Шестое задание 
+- создать DAG для Data engineer pipeline
+- создать DAG для Machine learning pipeline
+- использовать docker compore для деплоя airflow и postgres
+---
+### Седьмое задание
+- поставить grafana и настроить дашборд
+---
+
+### Восьмое задание 
+- Построить дашборды,которые чекают качество модели
+- Чекать данные на Data shift, Concept Shift с помощью [Evedantly](https://github.com/evidentlyai/evidently)
+
+---

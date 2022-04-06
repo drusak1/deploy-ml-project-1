@@ -1,0 +1,21 @@
+experiments:
+  name_experiment: "Baseline_Predictions"
+  run_name: "logistic_regression_model_baseline"
+
+data:
+  random_state: 42
+  target: "count"
+  ID: "user_id"
+  missing_values: -999
+  threshold_miss: 0.5
+
+enc:
+  _target_: category_encoders.TargetEncoder
+
+model:
+  _target_: sklearn.linear_model.LogisticRegression
+  penalty: l1
+  solver: liblinear
+  C: 1.0
+  max_iter: 10000
+  class_weight: "balanced"

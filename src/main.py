@@ -16,6 +16,8 @@ warnings.filterwarnings("ignore")
 """
 корявый пример использования mlflow
 """
+
+
 def run_model(cfg):
 
     orig_cwd = hydra.utils.get_original_cwd()
